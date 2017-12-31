@@ -6,7 +6,7 @@ import numpy as np
 import time
 
 #load the csv as the dataframe with only the columns you care about
-df = pd.read_csv('input.csv', usecols = ['Organization Name (English)', 'Organization Name (Chinese)', 'Organization Origin', 'Chinese Partner Unit (English)', 'Chinese Partner Unit (Chinese)', 'Activity Name (English)', 'Activity Name (Chinese)', 'Activity Location (English)', 'Activity Location (Chinese)', 'Start Date', 'End Date'])
+df = pd.read_csv('tempactinput.csv', usecols = ['Organization Name (English)', 'Organization Name (Chinese)', 'Organization Origin', 'Chinese Partner Unit (English)', 'Chinese Partner Unit (Chinese)', 'Activity Name (English)', 'Activity Name (Chinese)', 'Activity Location (English)', 'Activity Location (Chinese)', 'Start Date', 'End Date'])
 
 
 #reorders the columns
