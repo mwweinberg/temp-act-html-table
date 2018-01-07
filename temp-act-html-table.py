@@ -24,7 +24,8 @@ new_table = df.to_html(index = False, classes = ['tableizer-firstrow'], border =
 #changes the formatting for the table headers
 #I'm sure there is a more elegant way of doing this but I don't know it
 fixed_table_1 = new_table.strip('<table border="0" class="dataframe tableizer-firstrow">')
-fixed_table_2 = fixed_table_1.replace('<th>Organization Name (English)</th>', '<th style="width:10%">Organization Name (English)</th>')
+fixed_table_1a = fixed_table_1.replace('<tr style="text-align: right;">', '<tr style="text-align: center;">')
+fixed_table_2 = fixed_table_1a.replace('<th>Organization Name (English)</th>', '<th style="width:10%">Organization Name (English)</th>')
 fixed_table_3 = fixed_table_2.replace('<th>Organization Name (Chinese)</th>', '<th style="width:10%">Organization Name (Chinese)</th>')
 fixed_table_4 = fixed_table_3.replace('<th>Organization Origin</th>', '<th style="width:10%">Organization Origin</th>')
 fixed_table_5 = fixed_table_4.replace('<th>Chinese Partner Unit (English)</th>', '<th style="width:10%">Chinese Partner Unit (English)</th>')
